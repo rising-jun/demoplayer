@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3000416B26B92FF600113904 /* EthWalletLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3000416A26B92FF600113904 /* EthWalletLogin.swift */; };
+		301094B226BB9050000D25F0 /* SmartContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301094B126BB9050000D25F0 /* SmartContract.swift */; };
+		301094B426BB9257000D25F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 301094B326BB9257000D25F0 /* Localizable.strings */; };
+		30503D9726BA686D00DAD1C6 /* ContentSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30503D9626BA686D00DAD1C6 /* ContentSelectViewController.swift */; };
+		30503D9A26BA6ABE00DAD1C6 /* ContentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30503D9926BA6ABE00DAD1C6 /* ContentSelectView.swift */; };
+		30503D9D26BA714C00DAD1C6 /* ContentSelectReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30503D9C26BA714C00DAD1C6 /* ContentSelectReactor.swift */; };
 		305EAE4626B3C011000B012F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE4526B3C011000B012F /* AppDelegate.swift */; };
-		305EAE4826B3C011000B012F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE4726B3C011000B012F /* SceneDelegate.swift */; };
-		305EAE4A26B3C011000B012F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE4926B3C011000B012F /* ViewController.swift */; };
-		305EAE4D26B3C011000B012F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305EAE4B26B3C011000B012F /* Main.storyboard */; };
+		305EAE4A26B3C011000B012F /* WalletLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE4926B3C011000B012F /* WalletLoginViewController.swift */; };
 		305EAE4F26B3C012000B012F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305EAE4E26B3C012000B012F /* Assets.xcassets */; };
 		305EAE5226B3C012000B012F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305EAE5026B3C012000B012F /* LaunchScreen.storyboard */; };
 		305EAE5D26B3C012000B012F /* DemoLoopyPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE5C26B3C012000B012F /* DemoLoopyPlayerTests.swift */; };
 		305EAE6826B3C012000B012F /* DemoLoopyPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE6726B3C012000B012F /* DemoLoopyPlayerUITests.swift */; };
+		305EAE7726B3C473000B012F /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE7626B3C473000B012F /* BaseClass.swift */; };
+		305EAE7E26B3C62F000B012F /* WalletLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE7D26B3C62F000B012F /* WalletLoginView.swift */; };
+		305EAE8026B3C778000B012F /* WalletLoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE7F26B3C778000B012F /* WalletLoginReactor.swift */; };
+		305EAE8226B3E250000B012F /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE8126B3E250000B012F /* CommonEnum.swift */; };
+		89AEF4BEC7D0F0419C6A4253 /* Pods_DemoLoopyPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE866F8CFF6F273D5AE2846 /* Pods_DemoLoopyPlayerTests.framework */; };
+		EACEE6F89D28B3C955AC59F2 /* Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D9CA0D3F10F8EE09161CB /* Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework */; };
+		FF5E3451F784501B08AFCA97 /* Pods_DemoLoopyPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F7BF11FF657E4E42123D02 /* Pods_DemoLoopyPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3000416A26B92FF600113904 /* EthWalletLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthWalletLogin.swift; sourceTree = "<group>"; };
+		301094B126BB9050000D25F0 /* SmartContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartContract.swift; sourceTree = "<group>"; };
+		301094B326BB9257000D25F0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		30503D9626BA686D00DAD1C6 /* ContentSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectViewController.swift; sourceTree = "<group>"; };
+		30503D9926BA6ABE00DAD1C6 /* ContentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectView.swift; sourceTree = "<group>"; };
+		30503D9C26BA714C00DAD1C6 /* ContentSelectReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectReactor.swift; sourceTree = "<group>"; };
 		305EAE4226B3C011000B012F /* DemoLoopyPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoLoopyPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305EAE4526B3C011000B012F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		305EAE4726B3C011000B012F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		305EAE4926B3C011000B012F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		305EAE4C26B3C011000B012F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		305EAE4926B3C011000B012F /* WalletLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLoginViewController.swift; sourceTree = "<group>"; };
 		305EAE4E26B3C012000B012F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		305EAE5126B3C012000B012F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		305EAE5326B3C012000B012F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,19 @@
 		305EAE6326B3C012000B012F /* DemoLoopyPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoLoopyPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		305EAE6726B3C012000B012F /* DemoLoopyPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLoopyPlayerUITests.swift; sourceTree = "<group>"; };
 		305EAE6926B3C012000B012F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305EAE7626B3C473000B012F /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		305EAE7D26B3C62F000B012F /* WalletLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLoginView.swift; sourceTree = "<group>"; };
+		305EAE7F26B3C778000B012F /* WalletLoginReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLoginReactor.swift; sourceTree = "<group>"; };
+		305EAE8126B3E250000B012F /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
+		515BD04BCA1C7145B5AD43C6 /* Pods-DemoLoopyPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayer.release.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		52F7BF11FF657E4E42123D02 /* Pods_DemoLoopyPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLoopyPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE866F8CFF6F273D5AE2846 /* Pods_DemoLoopyPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLoopyPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10E5C6F75EBDE649A08A204 /* Pods-DemoLoopyPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayerTests/Pods-DemoLoopyPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E40C9209D4F47A43D6FDFFF8 /* Pods-DemoLoopyPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayer.debug.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F1BCF4B1C6F2ECE40843A83B /* Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB3D9CA0D3F10F8EE09161CB /* Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3E8133FD2DD1E145D49F2E /* Pods-DemoLoopyPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayerTests/Pods-DemoLoopyPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		FEAF92084722C4420770CA1C /* Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5E3451F784501B08AFCA97 /* Pods_DemoLoopyPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AEF4BEC7D0F0419C6A4253 /* Pods_DemoLoopyPlayerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACEE6F89D28B3C955AC59F2 /* Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301094B026BB903F000D25F0 /* dataservice */ = {
+			isa = PBXGroup;
+			children = (
+				301094B126BB9050000D25F0 /* SmartContract.swift */,
+			);
+			path = dataservice;
+			sourceTree = "<group>";
+		};
+		30503D9526BA685900DAD1C6 /* contentView */ = {
+			isa = PBXGroup;
+			children = (
+				301094B026BB903F000D25F0 /* dataservice */,
+				30503D9B26BA70D800DAD1C6 /* reactor */,
+				30503D9826BA687200DAD1C6 /* view */,
+				30503D9626BA686D00DAD1C6 /* ContentSelectViewController.swift */,
+			);
+			path = contentView;
+			sourceTree = "<group>";
+		};
+		30503D9826BA687200DAD1C6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				30503D9926BA6ABE00DAD1C6 /* ContentSelectView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		30503D9B26BA70D800DAD1C6 /* reactor */ = {
+			isa = PBXGroup;
+			children = (
+				30503D9C26BA714C00DAD1C6 /* ContentSelectReactor.swift */,
+			);
+			path = reactor;
+			sourceTree = "<group>";
+		};
 		305EAE3926B3C011000B012F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +149,8 @@
 				305EAE5B26B3C012000B012F /* DemoLoopyPlayerTests */,
 				305EAE6626B3C012000B012F /* DemoLoopyPlayerUITests */,
 				305EAE4326B3C011000B012F /* Products */,
+				D429A7B6ED16ABB9A434611D /* Pods */,
+				CCC153091B4786E5A94BD21A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +167,10 @@
 		305EAE4426B3C011000B012F /* DemoLoopyPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				30503D9526BA685900DAD1C6 /* contentView */,
+				305EAE7826B3C547000B012F /* login */,
+				305EAE7526B3C45E000B012F /* common */,
 				305EAE4526B3C011000B012F /* AppDelegate.swift */,
-				305EAE4726B3C011000B012F /* SceneDelegate.swift */,
-				305EAE4926B3C011000B012F /* ViewController.swift */,
-				305EAE4B26B3C011000B012F /* Main.storyboard */,
 				305EAE4E26B3C012000B012F /* Assets.xcassets */,
 				305EAE5026B3C012000B012F /* LaunchScreen.storyboard */,
 				305EAE5326B3C012000B012F /* Info.plist */,
@@ -128,6 +196,74 @@
 			path = DemoLoopyPlayerUITests;
 			sourceTree = "<group>";
 		};
+		305EAE7526B3C45E000B012F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				305EAE7626B3C473000B012F /* BaseClass.swift */,
+				305EAE8126B3E250000B012F /* CommonEnum.swift */,
+				301094B326BB9257000D25F0 /* Localizable.strings */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		305EAE7826B3C547000B012F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				305EAE7C26B3C622000B012F /* reactor */,
+				305EAE7B26B3C61D000B012F /* view */,
+				305EAE7A26B3C5CA000B012F /* dataservice */,
+				305EAE4926B3C011000B012F /* WalletLoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		305EAE7A26B3C5CA000B012F /* dataservice */ = {
+			isa = PBXGroup;
+			children = (
+				3000416A26B92FF600113904 /* EthWalletLogin.swift */,
+			);
+			path = dataservice;
+			sourceTree = "<group>";
+		};
+		305EAE7B26B3C61D000B012F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				305EAE7D26B3C62F000B012F /* WalletLoginView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		305EAE7C26B3C622000B012F /* reactor */ = {
+			isa = PBXGroup;
+			children = (
+				305EAE7F26B3C778000B012F /* WalletLoginReactor.swift */,
+			);
+			path = reactor;
+			sourceTree = "<group>";
+		};
+		CCC153091B4786E5A94BD21A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F7BF11FF657E4E42123D02 /* Pods_DemoLoopyPlayer.framework */,
+				FB3D9CA0D3F10F8EE09161CB /* Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework */,
+				8CE866F8CFF6F273D5AE2846 /* Pods_DemoLoopyPlayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D429A7B6ED16ABB9A434611D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E40C9209D4F47A43D6FDFFF8 /* Pods-DemoLoopyPlayer.debug.xcconfig */,
+				515BD04BCA1C7145B5AD43C6 /* Pods-DemoLoopyPlayer.release.xcconfig */,
+				FEAF92084722C4420770CA1C /* Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.debug.xcconfig */,
+				F1BCF4B1C6F2ECE40843A83B /* Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.release.xcconfig */,
+				D10E5C6F75EBDE649A08A204 /* Pods-DemoLoopyPlayerTests.debug.xcconfig */,
+				FC3E8133FD2DD1E145D49F2E /* Pods-DemoLoopyPlayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 305EAE6C26B3C012000B012F /* Build configuration list for PBXNativeTarget "DemoLoopyPlayer" */;
 			buildPhases = (
+				3D10FBAC8C4708CDC793D94A /* [CP] Check Pods Manifest.lock */,
 				305EAE3E26B3C011000B012F /* Sources */,
 				305EAE3F26B3C011000B012F /* Frameworks */,
 				305EAE4026B3C011000B012F /* Resources */,
+				43FEDE1714033EB937758A35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 305EAE6F26B3C012000B012F /* Build configuration list for PBXNativeTarget "DemoLoopyPlayerTests" */;
 			buildPhases = (
+				80FD415D6C0C1E334FD35E90 /* [CP] Check Pods Manifest.lock */,
 				305EAE5426B3C012000B012F /* Sources */,
 				305EAE5526B3C012000B012F /* Frameworks */,
 				305EAE5626B3C012000B012F /* Resources */,
@@ -170,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 305EAE7226B3C012000B012F /* Build configuration list for PBXNativeTarget "DemoLoopyPlayerUITests" */;
 			buildPhases = (
+				B34FF7D74E414F5D41AFC111 /* [CP] Check Pods Manifest.lock */,
 				305EAE5F26B3C012000B012F /* Sources */,
 				305EAE6026B3C012000B012F /* Frameworks */,
 				305EAE6126B3C012000B012F /* Resources */,
+				F382F8300D95E7021F9AD287 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				305EAE5226B3C012000B012F /* LaunchScreen.storyboard in Resources */,
+				301094B426BB9257000D25F0 /* Localizable.strings in Resources */,
 				305EAE4F26B3C012000B012F /* Assets.xcassets in Resources */,
-				305EAE4D26B3C011000B012F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +394,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D10FBAC8C4708CDC793D94A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoLoopyPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43FEDE1714033EB937758A35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80FD415D6C0C1E334FD35E90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoLoopyPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B34FF7D74E414F5D41AFC111 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F382F8300D95E7021F9AD287 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests/Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		305EAE3E26B3C011000B012F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305EAE4A26B3C011000B012F /* ViewController.swift in Sources */,
+				305EAE4A26B3C011000B012F /* WalletLoginViewController.swift in Sources */,
+				301094B226BB9050000D25F0 /* SmartContract.swift in Sources */,
+				305EAE8226B3E250000B012F /* CommonEnum.swift in Sources */,
+				30503D9D26BA714C00DAD1C6 /* ContentSelectReactor.swift in Sources */,
+				30503D9726BA686D00DAD1C6 /* ContentSelectViewController.swift in Sources */,
+				305EAE7E26B3C62F000B012F /* WalletLoginView.swift in Sources */,
+				30503D9A26BA6ABE00DAD1C6 /* ContentSelectView.swift in Sources */,
+				305EAE7726B3C473000B012F /* BaseClass.swift in Sources */,
+				305EAE8026B3C778000B012F /* WalletLoginReactor.swift in Sources */,
 				305EAE4626B3C011000B012F /* AppDelegate.swift in Sources */,
-				305EAE4826B3C011000B012F /* SceneDelegate.swift in Sources */,
+				3000416B26B92FF600113904 /* EthWalletLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +548,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		305EAE4B26B3C011000B012F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				305EAE4C26B3C011000B012F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		305EAE5026B3C012000B012F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,10 +677,12 @@
 		};
 		305EAE6D26B3C012000B012F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40C9209D4F47A43D6FDFFF8 /* Pods-DemoLoopyPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHMNAPQ6N7;
 				INFOPLIST_FILE = DemoLoopyPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,10 +697,12 @@
 		};
 		305EAE6E26B3C012000B012F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515BD04BCA1C7145B5AD43C6 /* Pods-DemoLoopyPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHMNAPQ6N7;
 				INFOPLIST_FILE = DemoLoopyPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,6 +717,7 @@
 		};
 		305EAE7026B3C012000B012F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10E5C6F75EBDE649A08A204 /* Pods-DemoLoopyPlayerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +739,7 @@
 		};
 		305EAE7126B3C012000B012F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC3E8133FD2DD1E145D49F2E /* Pods-DemoLoopyPlayerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +761,7 @@
 		};
 		305EAE7326B3C012000B012F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAF92084722C4420770CA1C /* Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +781,7 @@
 		};
 		305EAE7426B3C012000B012F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1BCF4B1C6F2ECE40843A83B /* Pods-DemoLoopyPlayer-DemoLoopyPlayerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
