@@ -26,8 +26,6 @@ enum WalletError: Error {
 class EthWalletLogin {
 
     //static let shared = EthWalletLogin()
-    
-    
     private let userAddressKey = "userAddressKey"
     private let migratedKeystoreKey = "migratedKeystoreKey"
     private let cobakWalletKeystoreDataKey = "cobakWalletKeystoreDataKey"

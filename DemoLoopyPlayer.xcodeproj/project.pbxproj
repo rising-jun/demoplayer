@@ -23,6 +23,8 @@
 		305EAE7E26B3C62F000B012F /* WalletLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE7D26B3C62F000B012F /* WalletLoginView.swift */; };
 		305EAE8026B3C778000B012F /* WalletLoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE7F26B3C778000B012F /* WalletLoginReactor.swift */; };
 		305EAE8226B3E250000B012F /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE8126B3E250000B012F /* CommonEnum.swift */; };
+		72BDC63E26BBC37500E3340F /* NFTContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDC63D26BBC37500E3340F /* NFTContract.swift */; };
+		72BDC64426BBE50400E3340F /* MusicPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDC64326BBE50400E3340F /* MusicPlayView.swift */; };
 		89AEF4BEC7D0F0419C6A4253 /* Pods_DemoLoopyPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE866F8CFF6F273D5AE2846 /* Pods_DemoLoopyPlayerTests.framework */; };
 		EACEE6F89D28B3C955AC59F2 /* Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3D9CA0D3F10F8EE09161CB /* Pods_DemoLoopyPlayer_DemoLoopyPlayerUITests.framework */; };
 		FF5E3451F784501B08AFCA97 /* Pods_DemoLoopyPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F7BF11FF657E4E42123D02 /* Pods_DemoLoopyPlayer.framework */; };
@@ -70,6 +72,8 @@
 		305EAE8126B3E250000B012F /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		515BD04BCA1C7145B5AD43C6 /* Pods-DemoLoopyPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayer.release.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		52F7BF11FF657E4E42123D02 /* Pods_DemoLoopyPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLoopyPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72BDC63D26BBC37500E3340F /* NFTContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTContract.swift; sourceTree = "<group>"; };
+		72BDC64326BBE50400E3340F /* MusicPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayView.swift; sourceTree = "<group>"; };
 		8CE866F8CFF6F273D5AE2846 /* Pods_DemoLoopyPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLoopyPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10E5C6F75EBDE649A08A204 /* Pods-DemoLoopyPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayerTests/Pods-DemoLoopyPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E40C9209D4F47A43D6FDFFF8 /* Pods-DemoLoopyPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayer.debug.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +119,7 @@
 			path = dataservice;
 			sourceTree = "<group>";
 		};
-		30503D9526BA685900DAD1C6 /* contentView */ = {
+		30503D9526BA685900DAD1C6 /* contentSelectView */ = {
 			isa = PBXGroup;
 			children = (
 				301094B026BB903F000D25F0 /* dataservice */,
@@ -123,7 +127,7 @@
 				30503D9826BA687200DAD1C6 /* view */,
 				30503D9626BA686D00DAD1C6 /* ContentSelectViewController.swift */,
 			);
-			path = contentView;
+			path = contentSelectView;
 			sourceTree = "<group>";
 		};
 		30503D9826BA687200DAD1C6 /* view */ = {
@@ -167,7 +171,8 @@
 		305EAE4426B3C011000B012F /* DemoLoopyPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				30503D9526BA685900DAD1C6 /* contentView */,
+				72BDC63F26BBDEAE00E3340F /* content */,
+				30503D9526BA685900DAD1C6 /* contentSelectView */,
 				305EAE7826B3C547000B012F /* login */,
 				305EAE7526B3C45E000B012F /* common */,
 				305EAE4526B3C011000B012F /* AppDelegate.swift */,
@@ -202,6 +207,7 @@
 				305EAE7626B3C473000B012F /* BaseClass.swift */,
 				305EAE8126B3E250000B012F /* CommonEnum.swift */,
 				301094B326BB9257000D25F0 /* Localizable.strings */,
+				72BDC63D26BBC37500E3340F /* NFTContract.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -239,6 +245,38 @@
 				305EAE7F26B3C778000B012F /* WalletLoginReactor.swift */,
 			);
 			path = reactor;
+			sourceTree = "<group>";
+		};
+		72BDC63F26BBDEAE00E3340F /* content */ = {
+			isa = PBXGroup;
+			children = (
+				72BDC64226BBDEC900E3340F /* dataservice */,
+				72BDC64126BBDEBF00E3340F /* reactor */,
+				72BDC64026BBDEB800E3340F /* view */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
+		72BDC64026BBDEB800E3340F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				72BDC64326BBE50400E3340F /* MusicPlayView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		72BDC64126BBDEBF00E3340F /* reactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reactor;
+			sourceTree = "<group>";
+		};
+		72BDC64226BBDEC900E3340F /* dataservice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dataservice;
 			sourceTree = "<group>";
 		};
 		CCC153091B4786E5A94BD21A /* Frameworks */ = {
@@ -504,6 +542,8 @@
 			files = (
 				305EAE4A26B3C011000B012F /* WalletLoginViewController.swift in Sources */,
 				301094B226BB9050000D25F0 /* SmartContract.swift in Sources */,
+				72BDC63E26BBC37500E3340F /* NFTContract.swift in Sources */,
+				72BDC64426BBE50400E3340F /* MusicPlayView.swift in Sources */,
 				305EAE8226B3E250000B012F /* CommonEnum.swift in Sources */,
 				30503D9D26BA714C00DAD1C6 /* ContentSelectReactor.swift in Sources */,
 				30503D9726BA686D00DAD1C6 /* ContentSelectViewController.swift in Sources */,

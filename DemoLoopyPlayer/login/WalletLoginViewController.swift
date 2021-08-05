@@ -9,8 +9,6 @@ import UIKit
 import ReactorKit
 import RxCocoa
 import RxViewController
-import Tabman
-import Pageboy
 
 class WalletLoginViewController: BaseViewController, View {
     

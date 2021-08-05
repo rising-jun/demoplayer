@@ -27,7 +27,7 @@ class SmartContract{
         self.nft = ERC721(web3: web3test, provider: web3test.provider, address: contractEthreumAddress)
     }
     
-    public func checkTokenInfo(contractAddress: String, completion: @escaping (String?) -> ()) {
+    public func getTokenData(contractAddress: String, completion: @escaping ([ContentType : String]?) -> ()) {
         DispatchQueue.global().async {
             //let balance = try? self.tokenBalance(contractAddress: contractAddress)
             guard let tokenBal = try? self.nftBalanceOf() else {
@@ -37,17 +37,31 @@ class SmartContract{
             guard let tokenIdList = try? self.nftTokenId(index: tokenBal) else{
                 return
             }
-            
-            print("tokenIdList : \(tokenIdList)")
-            
-            guard let tokenURI = try? self.nftURI(tokenId: tokenIdList.first!) else{
-                return
+            var uriDataList: Dictionary = [ContentType : String]()
+            for e in tokenIdList{
+                guard let tokenURI = try? self.nftURI(tokenId: e) else{
+                    return
+                }
+                if Int(e) == NFTContract.MUSIC{
+                    uriDataList.updateValue(tokenURI, forKey: .music)
+                }else if Int(e) == NFTContract.TICKET{
+                    uriDataList.updateValue(tokenURI, forKey: .ticket)
+                }
             }
             
-            print(tokenURI)
+            
             DispatchQueue.main.async {
-                completion(tokenURI)
+                completion(uriDataList)
             }
+        }
+    }
+    
+    public func getNftIpfs(tokenIdList: [BigUInt], completion: @escaping ([String]?) -> ()){
+        guard let tokenURI = try? self.nftURI(tokenId: tokenIdList.first!) else{
+            return
+        }
+        DispatchQueue.main.async {
+            //completion(tokenURI)
         }
     }
     

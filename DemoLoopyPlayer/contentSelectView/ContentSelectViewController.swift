@@ -15,7 +15,7 @@ class ContentSelectViewController: BaseViewController, ReactorKit.View {
     
     var disposeBag: DisposeBag = DisposeBag()
     lazy var v = ContentSelectView(frame: view.frame)
-    
+    private var tokenData = [ContentType : String]()
     
     func bind(reactor: ContentSelectReactor) {
         
@@ -52,6 +52,33 @@ class ContentSelectViewController: BaseViewController, ReactorKit.View {
             }
     
         }
+        
+        reactor.state.map{$0.contentData}
+            .filter{$0.count > 1}
+            .distinctUntilChanged()
+            .take(1)
+            .bind { [weak self] tokenData in
+                guard let self = self else { return }
+                self.tokenData = tokenData
+                
+                if tokenData[.music] == nil{
+                    self.v.musicView.isHidden = true
+                }
+                
+                if tokenData[.ticket] == nil{
+                    self.v.ticketView.isHidden = true
+                }
+                
+                print("tokenData movie? \(tokenData[.movie])")
+                if tokenData[.movie] == nil{
+                    
+                    self.v.movieView.isHidden = true
+                }
+                    
+                self.v.loadingView.removeFromSuperview()
+                
+            print("viewcontroller take tokenData \(tokenData)")
+            }.disposed(by: disposeBag)
         
         reactor.state.map{$0.contentType}.filter{$0 != .none}.bind { content in
             switch content{

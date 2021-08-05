@@ -10,11 +10,15 @@ import ReactorKit
 
 
 class ContentSelectReactor: Reactor{
-    
+
     public var address: String = ""
     private let nftID = "0x4C7566f38FA9eB3f5Fd4D7cCce01b43e35592E74"
+    private var tokenListPublish = PublishSubject<[ContentType : String]>()
     
     private var smartContract: SmartContract! = nil
+    
+    
+    
     
     enum Action {
         case viewDidLoaded
@@ -24,11 +28,13 @@ class ContentSelectReactor: Reactor{
     enum Mutation{
         case setWalletLoginView(ViewLife)
         case updateContentState(ContentType)
+        case updateContentData([ContentType: String])
     }
     
     struct State{
         var viewLife: ViewLife = .none
         var contentType: ContentType = .none
+        var contentData: [ContentType : String] = [:]
     }
     
     let initialState: State = State()
@@ -37,10 +43,15 @@ class ContentSelectReactor: Reactor{
         switch action {
         case .viewDidLoaded:
             smartContract = SmartContract(userAddress: self.address, contractAddress: nftID)
-            smartContract.checkTokenInfo(contractAddress: nftID) { data in
-                print("reactor data \(data)")
+            smartContract.getTokenData(contractAddress: nftID) { [weak self] tokenList in
+                print("reactor data \(tokenList)")
+                self?.tokenListPublish.onNext(tokenList!)
             }
-            return Observable.just(Mutation.setWalletLoginView(.viewDidLoad))
+            
+            return Observable.concat([
+                Observable.just(Mutation.setWalletLoginView(.viewDidLoad)),
+                tokenListPublish.map{Mutation.updateContentData($0)}
+            ])
             break
         case .contentBtnTap(let conetentType):
             print("reactor tapped \(conetentType)")
@@ -60,6 +71,8 @@ class ContentSelectReactor: Reactor{
         case .updateContentState(let contentType):
             newState.contentType = contentType
             break
+        case .updateContentData(let contentData):
+            newState.contentData = contentData
         default:
             break
         }
