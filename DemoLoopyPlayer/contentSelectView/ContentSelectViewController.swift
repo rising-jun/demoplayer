@@ -80,13 +80,16 @@ class ContentSelectViewController: BaseViewController, ReactorKit.View {
             print("viewcontroller take tokenData \(tokenData)")
             }.disposed(by: disposeBag)
         
-        reactor.state.map{$0.contentType}.filter{$0 != .none}.bind { content in
+        reactor.state.map{$0.contentType}.filter{$0 != .none}.bind {[weak self] content in
+            guard let self = self else { return }
             switch content{
             case .music:
                 print("music")
+                self.presentMusicViewController(url: self.tokenData[.music]!)
                 break
             case .ticket:
                 print("ticket")
+                self.presentTicketViewController(url: self.tokenData[.ticket]!)
                 break
             case .movie:
                 print("movie")
@@ -100,7 +103,21 @@ class ContentSelectViewController: BaseViewController, ReactorKit.View {
         
     }
     
+    func presentMusicViewController(url: String){
+        let viewController = MusicPlayViewController()
+        let reactor = MusicPlayReactor()
+        reactor.url = url
+        viewController.reactor = reactor
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+    }
     
-    
+    func presentTicketViewController(url: String){
+        let viewController = TicketViewController()
+        let reactor = TicketReatcor()
+        viewController.reactor = reactor
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+    }
     
 }

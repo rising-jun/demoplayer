@@ -30,3 +30,15 @@ enum ContentType{
     case none
 }
 
+enum ViewState{
+    case willLoad
+    case viewDidLoad
+    case none
+    
+}
+
+enum PlayState{
+    case none
+    case play
+    case pause
+}

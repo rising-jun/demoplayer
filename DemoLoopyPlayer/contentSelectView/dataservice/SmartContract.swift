@@ -34,9 +34,12 @@ class SmartContract{
                 return
             }
             
+            print("smartcontract : tokenBal \(tokenBal)")
             guard let tokenIdList = try? self.nftTokenId(index: tokenBal) else{
                 return
             }
+            print("smartcontract : tokenIdList \(tokenIdList)")
+            
             var uriDataList: Dictionary = [ContentType : String]()
             for e in tokenIdList{
                 guard let tokenURI = try? self.nftURI(tokenId: e) else{

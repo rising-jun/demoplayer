@@ -23,6 +23,13 @@
 		305EAE7E26B3C62F000B012F /* WalletLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE7D26B3C62F000B012F /* WalletLoginView.swift */; };
 		305EAE8026B3C778000B012F /* WalletLoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE7F26B3C778000B012F /* WalletLoginReactor.swift */; };
 		305EAE8226B3E250000B012F /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305EAE8126B3E250000B012F /* CommonEnum.swift */; };
+		721F456226BCC7FA004F4CDC /* MusicPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721F456126BCC7FA004F4CDC /* MusicPlayViewController.swift */; };
+		721F456426BCC969004F4CDC /* MusicPlayerReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721F456326BCC969004F4CDC /* MusicPlayerReactor.swift */; };
+		721F456626BCC9DF004F4CDC /* MusicInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721F456526BCC9DF004F4CDC /* MusicInfoAPI.swift */; };
+		721F456926BCCA03004F4CDC /* MusicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721F456826BCCA03004F4CDC /* MusicInfo.swift */; };
+		721F456B26BCCCF3004F4CDC /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721F456A26BCCCF3004F4CDC /* TicketViewController.swift */; };
+		721F456D26BCCD01004F4CDC /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721F456C26BCCD01004F4CDC /* TicketView.swift */; };
+		721F456F26BCCD0E004F4CDC /* TicketReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721F456E26BCCD0E004F4CDC /* TicketReactor.swift */; };
 		72BDC63E26BBC37500E3340F /* NFTContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDC63D26BBC37500E3340F /* NFTContract.swift */; };
 		72BDC64426BBE50400E3340F /* MusicPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BDC64326BBE50400E3340F /* MusicPlayView.swift */; };
 		89AEF4BEC7D0F0419C6A4253 /* Pods_DemoLoopyPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE866F8CFF6F273D5AE2846 /* Pods_DemoLoopyPlayerTests.framework */; };
@@ -72,6 +79,13 @@
 		305EAE8126B3E250000B012F /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
 		515BD04BCA1C7145B5AD43C6 /* Pods-DemoLoopyPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLoopyPlayer.release.xcconfig"; path = "Target Support Files/Pods-DemoLoopyPlayer/Pods-DemoLoopyPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		52F7BF11FF657E4E42123D02 /* Pods_DemoLoopyPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLoopyPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		721F456126BCC7FA004F4CDC /* MusicPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayViewController.swift; sourceTree = "<group>"; };
+		721F456326BCC969004F4CDC /* MusicPlayerReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerReactor.swift; sourceTree = "<group>"; };
+		721F456526BCC9DF004F4CDC /* MusicInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfoAPI.swift; sourceTree = "<group>"; };
+		721F456826BCCA03004F4CDC /* MusicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfo.swift; sourceTree = "<group>"; };
+		721F456A26BCCCF3004F4CDC /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		721F456C26BCCD01004F4CDC /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		721F456E26BCCD0E004F4CDC /* TicketReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketReactor.swift; sourceTree = "<group>"; };
 		72BDC63D26BBC37500E3340F /* NFTContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTContract.swift; sourceTree = "<group>"; };
 		72BDC64326BBE50400E3340F /* MusicPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayView.swift; sourceTree = "<group>"; };
 		8CE866F8CFF6F273D5AE2846 /* Pods_DemoLoopyPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLoopyPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,12 +261,23 @@
 			path = reactor;
 			sourceTree = "<group>";
 		};
+		721F456726BCC9F4004F4CDC /* decoder */ = {
+			isa = PBXGroup;
+			children = (
+				721F456826BCCA03004F4CDC /* MusicInfo.swift */,
+			);
+			path = decoder;
+			sourceTree = "<group>";
+		};
 		72BDC63F26BBDEAE00E3340F /* content */ = {
 			isa = PBXGroup;
 			children = (
+				721F456726BCC9F4004F4CDC /* decoder */,
 				72BDC64226BBDEC900E3340F /* dataservice */,
 				72BDC64126BBDEBF00E3340F /* reactor */,
 				72BDC64026BBDEB800E3340F /* view */,
+				721F456126BCC7FA004F4CDC /* MusicPlayViewController.swift */,
+				721F456A26BCCCF3004F4CDC /* TicketViewController.swift */,
 			);
 			path = content;
 			sourceTree = "<group>";
@@ -261,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				72BDC64326BBE50400E3340F /* MusicPlayView.swift */,
+				721F456C26BCCD01004F4CDC /* TicketView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -268,6 +294,8 @@
 		72BDC64126BBDEBF00E3340F /* reactor */ = {
 			isa = PBXGroup;
 			children = (
+				721F456326BCC969004F4CDC /* MusicPlayerReactor.swift */,
+				721F456E26BCCD0E004F4CDC /* TicketReactor.swift */,
 			);
 			path = reactor;
 			sourceTree = "<group>";
@@ -275,6 +303,7 @@
 		72BDC64226BBDEC900E3340F /* dataservice */ = {
 			isa = PBXGroup;
 			children = (
+				721F456526BCC9DF004F4CDC /* MusicInfoAPI.swift */,
 			);
 			path = dataservice;
 			sourceTree = "<group>";
@@ -540,18 +569,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721F456426BCC969004F4CDC /* MusicPlayerReactor.swift in Sources */,
 				305EAE4A26B3C011000B012F /* WalletLoginViewController.swift in Sources */,
 				301094B226BB9050000D25F0 /* SmartContract.swift in Sources */,
 				72BDC63E26BBC37500E3340F /* NFTContract.swift in Sources */,
+				721F456626BCC9DF004F4CDC /* MusicInfoAPI.swift in Sources */,
 				72BDC64426BBE50400E3340F /* MusicPlayView.swift in Sources */,
 				305EAE8226B3E250000B012F /* CommonEnum.swift in Sources */,
 				30503D9D26BA714C00DAD1C6 /* ContentSelectReactor.swift in Sources */,
+				721F456B26BCCCF3004F4CDC /* TicketViewController.swift in Sources */,
 				30503D9726BA686D00DAD1C6 /* ContentSelectViewController.swift in Sources */,
+				721F456926BCCA03004F4CDC /* MusicInfo.swift in Sources */,
 				305EAE7E26B3C62F000B012F /* WalletLoginView.swift in Sources */,
+				721F456D26BCCD01004F4CDC /* TicketView.swift in Sources */,
 				30503D9A26BA6ABE00DAD1C6 /* ContentSelectView.swift in Sources */,
+				721F456F26BCCD0E004F4CDC /* TicketReactor.swift in Sources */,
 				305EAE7726B3C473000B012F /* BaseClass.swift in Sources */,
 				305EAE8026B3C778000B012F /* WalletLoginReactor.swift in Sources */,
 				305EAE4626B3C011000B012F /* AppDelegate.swift in Sources */,
+				721F456226BCC7FA004F4CDC /* MusicPlayViewController.swift in Sources */,
 				3000416B26B92FF600113904 /* EthWalletLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
